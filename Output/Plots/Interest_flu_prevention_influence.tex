@@ -1,0 +1,89 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.0906862745098039,0.425980392156863,0.611274509803922}
+\definecolor{color1}{rgb}{0.76421568627451,0.531862745098039,0.125980392156863}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Are you interested in flu prevention?},
+xmin=-0.5, xmax=1.5,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Points all},
+ymin=-2.7, ymax=12.7,
+ytick style={color=black}
+]
+\path [draw=white!21.1764705882353!black, fill=color0, semithick]
+(axis cs:-0.25,5)
+--(axis cs:0.25,5)
+--(axis cs:0.25,7.5)
+--(axis cs:-0.25,7.5)
+--(axis cs:-0.25,5)
+--cycle;
+\path [draw=white!21.1764705882353!black, fill=color1, semithick]
+(axis cs:0.75,7)
+--(axis cs:1.25,7)
+--(axis cs:1.25,10)
+--(axis cs:0.75,10)
+--(axis cs:0.75,7)
+--cycle;
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+0 5
+0 3
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+0 7.5
+0 9
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+-0.125 3
+0.125 3
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+-0.125 9
+0.125 9
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+1 7
+1 4
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+1 10
+1 12
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+0.875 4
+1.125 4
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+0.875 12
+1.125 12
+};
+\addplot [black, mark=diamond*, mark size=2.5, mark options={solid,fill=white!21.1764705882353!black}, only marks]
+table {%
+1 -2
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+-0.25 6
+0.25 6
+};
+\addplot [semithick, white!21.1764705882353!black]
+table {%
+0.75 9
+1.25 9
+};
+\end{axis}
+
+\end{tikzpicture}
